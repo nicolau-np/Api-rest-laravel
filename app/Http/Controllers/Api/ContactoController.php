@@ -11,7 +11,7 @@ class ContactoController extends Controller
 {
     public function index(){
         $contactos = Pessoa::all();
-        return response()->json($contactos);
+        return response()->json($contactos, 200);
     }
 
     public function show($id){
